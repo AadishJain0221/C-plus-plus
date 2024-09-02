@@ -1,27 +1,25 @@
 //this program is to demonstrate working of a constructor
 #include<iostream>
 using namespace std;
-class point
+class complex
 {
-    int x,y,z;
+    int a,b;
 
     public:
-    point(int x1,int y1, int z1)
+    complex(int a1,int b1)
     {
-        x=x1;
-        y=y1;
-        z=z1;
-        cout<<"Constructor is called"<<endl;
+        a=a1;
+        b=b1;
     }
     void putData()
     {
-        cout<<"("<<x<<","<<y<<","<<z<<")"<<endl;
+        cout<<a<<" + i"<<b<<endl;
     }
 };
 
 int main()
 {
-    point p1(3,4,5);
-    p1.putData();
+    complex c1(3,4);
+    c1.putData();
     return 0;
 }
